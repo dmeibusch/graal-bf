@@ -1,4 +1,4 @@
-# SimpleLanguage
+# Graal-BF
 
 A simple implementation of Brainf&*k built using Truffle for the GraalVM.
 
