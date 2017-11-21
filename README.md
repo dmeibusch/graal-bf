@@ -1,11 +1,6 @@
 # SimpleLanguage
 
-A simple demonstration language built using Truffle for the GraalVM.
-
-SimpleLanguage is heavily documented to explain the how and why of writing a
-Truffle language. A good way to read this documentation is to generate HTML of
-the JavaDoc comments and read that, and then read the source alongside the
-comments.
+A simple implementation of Brainf&*k built using Truffle for the GraalVM.
 
 This repository is licensed under the permissive UPL licence. Fork it to begin
 your own Truffle language.
@@ -16,36 +11,15 @@ your own Truffle language.
 
 ## Installation
 
-* Clone SL repository using
-  `git clone https://github.com/graalvm/simplelanguage`
+* Clone graal-bf repository using
 * Download Graal VM Development Kit from 
   http://www.oracle.com/technetwork/oracle-labs/program-languages/downloads
 * Unpack the downloaded `graalvm_*.tar.gz` into `simplelanguage/graalvm`. 
-* Verify that the file `simplelanguage/graalvm/bin/java` exists and is executable
+* Verify that the file `graal-bf/graalvm/bin/java` exists and is executable
 * Execute `mvn package`
 
-## IDE Setup 
-
-### Eclipse
-* Tested with Eclipse Mars SR2
-* Open Eclipse with a new workspace
-* Install `m2e` and `m2e-apt` plugins from the Eclipse marketplace (Help -> Eclipse Marketplace...)
-* File -> Import... -> Existing Maven Projects -> Select `simplelanguage` folder -> Finish
-
-### Netbeans
-* Tested with Netbeans 8.1
-* Open Netbeans
-* File -> Open Project -> Select `simplelanguage` folder -> Open Project
-
-### IntelliJ IDEA
-* Tested with IntelliJ 2016.1.3 Community Edition
-* Open IntelliJ IDEA
-* File -> New -> Project from existing Sources -> Select `simplelanguage` folder -> Click next and keep everything default on several screens -> Finish
-
-## Running
-
-* Execute `./sl tests/HelloWorld.sl` to run a simple language source file.
-* Execute `./sl -disassemble tests/SumPrint.sl` to see assembly code for Truffle compiled functions.
+* Execute `./bf tests/HelloWorld.bf` to run a simple language source file.
+* Execute `./bf -disassemble tests/HelloWorld.bf` to see assembly code for Truffle compiled functions.
 
 ## IGV
 
@@ -53,11 +27,11 @@ your own Truffle language.
   https://lafo.ssw.uni-linz.ac.at/pub/idealgraphvisualizer/
 * Unpack the downloaded `.zip` file  
 * Execute `bin/idealgraphvsiualizer` to start IGV
-* Execute `./sl -dump tests/SumPrint.sl` to dump graphs to IGV.
+* Execute `./bf -dump tests/HelloWorld.bf` to dump graphs to IGV.
 
 ## Debugging
 
-* Execute `./sl -debug tests/HelloWorld.sl`.
+* Execute `./bf -debug tests/HelloWorld.bf`.
 * Attach a Java remote debugger (like Eclipse) on port 8000.
 
 ## Tested Compatibility

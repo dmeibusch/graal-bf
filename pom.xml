@@ -17,23 +17,29 @@
             <groupId>org.graalvm</groupId>
             <artifactId>graal-sdk</artifactId>
             <version>0.28</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/graalvm/jre/lib/boot/graal-sdk.jar</systemPath>
         </dependency>
 		<dependency>
 			<groupId>com.oracle.truffle</groupId>
 			<artifactId>truffle-api</artifactId>
 			<version>0.28</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/graalvm/jre/lib/truffle/truffle-api.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>com.oracle.truffle</groupId>
 			<artifactId>truffle-tck</artifactId>
 			<version>0.28</version>
-			<scope>provided</scope>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/graalvm/jre/lib/truffle/truffle-tck.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>com.oracle.truffle</groupId>
 			<artifactId>truffle-dsl-processor</artifactId>
 			<version>0.28</version>
-			<scope>provided</scope>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/graalvm/jre/lib/truffle/truffle-dsl-processor.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
